@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: rgb(249, 248, 248);
   margin: 0;
   padding: 0;
 }
@@ -22,6 +22,9 @@ h6 {
 
 img {
   width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 35%;
 }
 
 .main-nav ul {
@@ -68,4 +71,16 @@ form button {
 
 .site-footer {
   padding: 2rem 0;
+}
+
+.skip {
+  position: absolute;
+  left: -500px;
+} 
+
+.skip:focus {
+  position: static;
+  background-color: red;
+  color: white; 
+  font-size: 2rem;
 }
